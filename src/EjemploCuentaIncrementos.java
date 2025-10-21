@@ -19,7 +19,7 @@ class CuentaIncrementos {
 class MiHebra extends Thread {
     // ============================================================================
     int                numIters;
-    CuentaIncrementos  c;
+    CuentaIncrementos c;
     
     // --------------------------------------------------------------------------
     public MiHebra( int numIters, CuentaIncrementos c ) {

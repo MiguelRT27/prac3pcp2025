@@ -177,7 +177,7 @@ class MiHebraPrimoDistPorBloques extends Thread {
     int tamVector = vector.length;
     int tamBloque = tamVector / numHebras;
     int inicio = idHebra * tamBloque;
-    int fin = (idHebra == numHebras - 1) ? tamVector : inicio + tamBloque;
+    int fin = Math.min(tamVector,tamBloque);
 
     for (int i = inicio; i < fin; i++) {
       if (EjemploMuestraPrimosEnVector.esPrimo(vector[i])) {
